@@ -1,0 +1,96 @@
+body, html {
+    margin: 5px;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    background-color: black;
+}
+
+.box {
+    text-align: center;
+    height: 700px;
+    margin: 5px;
+}
+
+.box1 {
+    flex:30%; /* Ocupa el 30% de la pantalla */
+    background-color: #FFD700; /* Color dorado */
+}
+
+.box2 {
+    flex: 0 0 45%; /* Ocupa el 45% de la pantalla */
+    background-color: #FF6347; /* Color coral */
+    display: flex;
+    flex-direction: column;
+}
+
+.box3 {
+    flex: 0 0 15%; /* Ocupa el 15% de la pantalla */
+    background-color: #00BFFF; /* Color azul claro */
+}
+.row {
+    display: flex;
+    width: 90%;
+    height: 45%;
+    margin: auto;
+}
+.bo1 {
+    flex: 1; /* Las cajas ocupan el mismo espacio */
+    background-color: red; /* Color rojo */
+    border-style: dashed;
+    margin: 5px;
+}
+.row2 {
+    display: flex;
+    width: 90%;
+    height: 25%;
+    margin: auto;
+}
+.bo2 {
+    flex: 1; /* Las cajas ocupan el mismo espacio */
+    background-color: red; /* Color rojo */
+    border-style: dashed;
+    margin: 5px;
+}
+.row3 {
+    display: flex;
+    width: 90%;
+    height: 35%;
+    margin: auto;
+}
+.bo3 {
+    flex: 1; /* Las cajas ocupan el mismo espacio */
+    background-color: red; /* Color rojo */
+    border-style: dashed;
+    margin: 5px;
+}
+.row31 {
+    display: flex;
+    width: 90%;
+    height: 10%;
+    margin: auto;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a disposición en columna en pantallas más pequeñas */
+    }
+
+    .box {
+        flex-basis: auto; /* Restablece el tamaño base para que se ajuste automáticamente en columna */
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .row2{
+        flex-direction: column;
+    }
+    .bo2{
+        flex-basis: auto; /* Restablece el tamaño base para que se ajuste automáticamente en columna */
+        width: 100%;
+    }
+}
